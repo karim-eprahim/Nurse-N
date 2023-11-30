@@ -1,4 +1,28 @@
-// import {initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+// ..............................
+// ........ application ......
+// ..............................
+window.addEventListener('load', () => {
+  registerSW();
+});
+
+// Register the Service Worker
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator
+            .serviceWorker
+            .register('serviceworker.js');
+    }
+    catch (e) {
+      console.log('SW registration failed');
+    }
+  }
+}
+
+// ..............................
+// ........ js and firebase ......
+// ..............................
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
 import {
   getDatabase,

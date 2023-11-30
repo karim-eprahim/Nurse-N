@@ -1,0 +1,22 @@
+{
+    "name":"Nurse Notes",
+    "short_name":"Nurse Notes",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#EEF0F4",
+    "theme_color":"#EEF0F4",
+    "scope": ".",
+    "description":"This is a PWA tutorial.",
+    "icons":[
+    {
+    "src":"imgs/android-chrome-192x192.png",                     
+    "sizes":"192x192",
+    "type":"image/png"
+    },
+    {
+    "src":"imgs/android-chrome-512x512.png",
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+  ]
+}
